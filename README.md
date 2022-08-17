@@ -1,7 +1,7 @@
 # react-fake-tweet-generator
 
-Prototürk youtube kanalında birlikte hazırladığımız fake tweet generator uygulama kodları
+Prototürk youtube kanalidagi video orqali tayyorlangan Fake Tweet Generator Web Sayti
 
 ## demo
 
-[https://fake-tweet-generator.prototurk.com/](https://fake-tweet-generator.prototurk.com/)
+https://fake-tweet-app.netlify.app/
