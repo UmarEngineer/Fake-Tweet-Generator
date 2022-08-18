@@ -33,6 +33,7 @@ const tweetFormat = tweet => {
     .replace(/@([\w]+)/g, '<span>@$1</span>')
     .replace(/#([\wşçöğüıİ]+)/gi, '<span>#$1</span>')
     .replace(/(https?:\/\/[\w\.\/]+)/, '<span>$1</span>')
+    .replace(/https?:\/\/(t\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)/, '')
     .replace(/\n/g, '<br />');
   return tweet;
 };
@@ -137,7 +138,7 @@ export default function App() {
             <label className='tweet-label'>Tweet</label>
             <textarea
               className="textarea"
-              maxLength="290"
+              maxLength="400"
               value={tweet}
               onChange={e => setTweet(e.target.value)}
             />
