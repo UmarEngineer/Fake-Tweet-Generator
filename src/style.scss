@@ -290,3 +290,21 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 400px) {
+  .tweet-container{
+  
+  .fetch-info{
+
+    input{
+      font-size: 12px;
+      padding: 0 10px;
+    }
+
+    button{
+      font-size: 11px;
+      padding: 0 5px;
+    }
+  }
+}
+}
