@@ -1,5 +1,4 @@
 import React, { useState, createRef, useEffect } from 'react';
-import './App.css'
 import './style.scss';
 import {
   ReplyIcon,
@@ -135,7 +134,7 @@ export default function App() {
             />
           </li>
           <li>
-            <label>Tweet</label>
+            <label className='tweet-label'>Tweet</label>
             <textarea
               className="textarea"
               maxLength="290"

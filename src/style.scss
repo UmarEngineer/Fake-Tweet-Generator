@@ -236,9 +236,57 @@ body {
 
 
 /* Using SCSS variables to store breakpoints */
-$breakpoint-tablet: 800px;
-@media screen and (max-width: $breakpoint-tablet) {
+
+@media screen and (max-width: 800px) {
   #root{
-    flex-direction: column;
+    flex-direction: column-reverse;
+  } 
+
+  .tweet-container {
+  
+  
+
+    .fetch-info{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    } 
+    .app-language{
+      top: 60px;
+    }
+  }
+
+  .tweet-settings{
+    max-width: 800px;
+    width: 100%;
+
+
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+    button{
+      flex-grow: 1;
+    }
+    .input{
+      padding: 20px 0 20px;
+    }
+    select{
+      padding: 19px 0 19px;
+    }
+    .tweet-label{
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tweet-container{
+    padding: 0 10px;
+    .fetch-info, .tweet{
+      max-width: 600px;
+      width: 100%;
+    }
   }
 }
