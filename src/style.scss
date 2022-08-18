@@ -292,6 +292,10 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  #root{
+    height: auto;
+  }
+  
   .tweet-container{
   
   .fetch-info{
